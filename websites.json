@@ -1,0 +1,7 @@
+[
+  { "name": "client-a-site",    "url": "https://example.com" },
+  { "name": "client-b-portal",  "url": "https://www.wikipedia.org" },
+  { "name": "client-c-api",     "url": "https://httpstat.us/500" },
+  { "name": "client-d-app",     "url": "https://does-not-exist.zsoftly-test.invalid" },
+  { "name": "client-e-store",   "url": "https://www.github.com" }
+]
