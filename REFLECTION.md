@@ -27,17 +27,7 @@ I would also add logging, retry mechanisms, and possibly store historical result
 
 ## (c) What would you do if the script reported a real client site as UNHEALTHY at 3 AM?
 
-1. **Don't panic but rather verify first.** Manually open the URL in a browser
-   and run a `curl` command to confirm the site is actually down, ruling
-   out a false positive (e.g. a temporary network blip).
-2. **Check if it's widespread.** Use a tool like downforeveryoneorjustme.com
-   or test from a different network/region.
-3. **Notify the client** according to the agreed SLA  even at 3 AM if
-   the contract requires it.
-4. **Escalate internally** if the issue is beyond my access to fix
-   (e.g. a server the client manages).
-5. **Document everything** timeline, what I checked, what I found, and
-   what was done — so the post-mortem is easy.
+First, I would verify whether the issue is real by manually checking the site and confirming from another network or monitoring source. If confirmed, I would follow the incident response process like notifying the on-call engineer or client, collect relevant logs and metrics, and continue monitoring until the issue is resolved.
 
 ## AI Tool Usage
-I used AI tools to help structure the project and understand best practices, but I reviewed and understood all code before using it.
+I used AI tool (Claude) to help structure the project, but I reviewed and understood all code before using it.
